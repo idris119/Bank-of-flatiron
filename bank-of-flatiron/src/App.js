@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import AccountContainer from './AccountContainer';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <div className="segment violet inverted">
         <h2> BANK OF FLATIRON</h2>
       </div>
-      
+      <AccountContainer />
     </div>
   );
 }
