@@ -5,14 +5,18 @@ function AddTransactionForm(){
     const getField =(e)=>{
         setTransactions ({...transactions,[e.target.name]:e.target.value});
     }
+
     const submission =(e)=>{
         fetch("http://localhost:8001/transactions",{
             method :"POST",
             headers:{"Content-Type" : "application/json"},
-            body:JSON.stringify(transactions), 
-        )};
+            body:JSON.stringify(transactions),
+        });
+    }
 
-    return(
+        
+
+    return (
         <div className="ui segment">
         <form className="ui form"onSubmit={(e)=>{submission(e)}}>
         <div className="inline fields">
