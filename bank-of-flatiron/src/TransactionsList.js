@@ -1,8 +1,11 @@
-import React from "./react";
+import React from "react";
 import Transaction from "./Transaction";
 function TransactionsList({transactions}){
+    const content =transactions.map((item)=>{
+        return <Transaction key={item.id} date={item.date} description={item.description} category={item.category} amount={item.amount} />;
+  })
     return(
-        <table className ="ui celledstriped padded tale">
+        <table className ="ui celled striped padded tale">
             <tbody>
                 <tr>
                     <th>
@@ -18,24 +21,11 @@ function TransactionsList({transactions}){
                     <th>
                         <h3 className="ui center aligned header">Amount</h3>
                     </th>
-                    <th>
-                        <h3 className="ui center aligned header">Action</h3>
-                            </th>
-
                     
 
                 </tr>
+                {content}
 
-                {transactions.map((transaction)=>(
-                    
-                    <Transaction 
-                    key={transaction.id}
-                    transaction={transaction}
-                    />
-         
-         
-                   
-                 ))}
 
 
              </tbody>   
