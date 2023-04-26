@@ -5,13 +5,13 @@ function TransactionsList({transactions}){
         return <Transaction key={item.id} date={item.date} description={item.description} category={item.category} amount={item.amount} />;
   })
     return(
-        <table className ="ui celled striped padded tale">
+        <table className ="ui celled striped padded table">
             <tbody>
                 <tr>
                     <th>
-                    <h3 className ="ui center aligned header">ID</h3>
+                       <h3 className ="ui center aligned header">ID</h3>
                     </th>
-                    <h3 className="ui center aligned header">Date</h3>
+                       <h3 className="ui center aligned header">Date</h3>
                     <th>
                         <h3 className="ui center aligned header">Description</h3>
                     </th>
@@ -23,13 +23,10 @@ function TransactionsList({transactions}){
                     </th>
                     
 
-                </tr>
+            </tr>
                 {content}
-
-
-
-             </tbody>   
-        </table> 
+         </tbody>   
+     </table> 
 
     );
 

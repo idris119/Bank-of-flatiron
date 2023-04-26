@@ -4,7 +4,6 @@ function Transaction({id,date,description,category,amount}){
     return(
         <tr>
             <td>{id}</td>
-            <td>{id}</td>
             <td>{date}</td>
             <td>{description}</td>
             <td>{category}</td>

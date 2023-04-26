@@ -3,12 +3,22 @@ import './App.css';
 import React from 'react';
 function App() {
   return (
-    <div classnName="ui raised segment">
-      <div className="ui segment violet inverted">
-        <h2> BANK OF FLATIRON</h2>
-      </div>
-      <AccountContainer />
-    </div>
+     <div className="ui raised segment"> 
+     
+
+
+  <nav className="bg-success p-2 text-white">
+
+    <h2 className="   text-black font-weight-bold ">Bank of Flatiron</h2>
+  </nav>
+  <div></div>
+
+  <div className="container-fluid">
+  <AccountContainer />
+  </div>
+  
+
+</div>
   );
 }
 
